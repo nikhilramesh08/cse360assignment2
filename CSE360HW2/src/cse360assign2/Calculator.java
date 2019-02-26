@@ -1,4 +1,4 @@
-package cse360assign3;
+package cse360assign2;
 
 public class Calculator {
 
@@ -13,19 +13,26 @@ public class Calculator {
 	}
 	
 	public void add (int value) {		//adds parameter value to total value
-		
+		total = total + value;
 	}
 	
 	public void subtract (int value) {	//subtracts parameter value from total value
-		
+		total = total - value;
 	}
 	
 	public void multiply (int value) {	//multiplies parameter value with total value
-		
+		total = total * value;
 	}
 	
 	public void divide (int value) {	//divides total value by parameter value
-		
+		if(value == 0)
+		{
+		total = 0;
+		}
+		else
+		{
+			total = total / value;
+		}
 	}
 	
 	public String getHistory () {		//lists operands called on
